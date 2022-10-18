@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.content {
+    border-bottom: 1px solid #000000;
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 8px grey;
+}
+section {
+    background-color: #b7f5f5;
+    padding: 15px;
+}
+    section:hover {
+        background-color: #ff5454;
+    }
+h1.news {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding-bottom: 2px;
+}
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 7px;
+    color: #ffffff;
+    border: none;
+    background: linear-gradient(0deg, green, limegreen);
+    box-shadow: 1px 1px 8px grey;
+}
+button:active, button:focus {
+    outline: none;
+}
+button:hover {
+    border: 1px solid darkgreen;
+}
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    border: none;
+    margin: 0;
+}
+.news1 {
+    position: fixed;
+    height: max-content;
+    width: 500px;
+    background-color: #e2ff74;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-right: -50%;
+    display: none;
+    z-index: 3;
+}
+h1.newshead {
+    text-align: center;
+}
+.news2 {
+    position: fixed;
+    height: max-content;
+    width: 500px;
+    background-color: #e2ff74;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-right: -50%;
+    display: none;
+    z-index: 3;
+}
+.news3 {
+    position: fixed;
+    height: max-content;
+    width: 500px;
+    background-color: #e2ff74;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-right: -50%;
+    display: none;
+    z-index: 3;
+}
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 20px;
+    min-width: 250px;
+    transition: all 0.8s ease 0s;
+}
+.overlay {
+    display: none;
+    background-color: #ffffff;
+    z-index: 2;
+    position: fixed;
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    filter: opacity(70%);
+}
